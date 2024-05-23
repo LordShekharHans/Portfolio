@@ -124,8 +124,6 @@ const Preview = () => {
 
             <Radar className="absolute -bottom-12" />
             <div className="absolute bottom-0 z-[41] h-px w-full bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
-
-            {/* <LampContainer/> */}
         </div>
     );
 };

@@ -14,7 +14,7 @@ const ProjectPage = () => {
 
     return (
         <div className="py-14 flex flex-col justify-center items-center">
-            <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%] -z-50">
+            <div className="absolute -top-[54%] left-1/2 w-[100%] -translate-x-1/2 md:-top-[46%] md:w-[100%] lg:-top-[104%] -z-50 overflow-hidden">
                 <img
                     src={heroBackground}
                     className="w-full"

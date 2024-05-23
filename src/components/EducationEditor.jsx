@@ -26,7 +26,7 @@ const EducationEditor = () => {
     return (
         <div className="flex flex-col gap-10 justify-center items-center overflow-hidden py-14">
             <h1 className="h1">Want To Know More?</h1>
-            <div className="flex flex-wrap items-center justify-center gap-10 w-full">
+            <div className="flex flex-wrap items-center justify-center gap-10 lg:w-full w-1/2">
                 <div className="flex flex-row md:flex-row lg:flex-col gap-2  justify-center items-center">
                     {buttons.map(({ label, content }) => (
                         <SoundOnHoverAndClick>

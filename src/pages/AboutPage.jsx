@@ -13,7 +13,7 @@ const AboutPage = () => {
 
     return (
         <div className=" px-10 flex flex-col gap-10 overflow-hidden">
-            <div className="absolute -top-[64%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%] -z-50 bg-no-repeat">
+            <div className="absolute -top-[64%] left-1/2 w-[100%] -translate-x-1/2 md:-top-[46%] md:w-[100%] lg:-top-[104%] -z-50 bg-no-repeat ">
                 <img
                     src={heroBackground}
                     className="w-full"
