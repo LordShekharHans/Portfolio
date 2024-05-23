@@ -27,7 +27,8 @@ const CVModal = ({ toggleCVModal }) => {
     };
 
     return (
-        <div className="fixed top-0 left-0 z-50 w-full h-full bg-opacity-50 flex justify-center items-center scrollbar-width-none overflow-y-auto cvmodal">
+        <div className="fixed top-0 left-0 z-[999999] w-full h-full bg-opacity-50 flex justify-center items-center scrollbar-width-none overflow-y-auto cvmodal">
+            
             <div className="relative p-4 w-full max-w-4xl max-h-full scrollbar-width-none">
                 <div className="relative border border-slate-500/30 rounded-lg px-8 py-1 bg-gradient-to-br from-gray-800 to-gray-900">
                     <div className="w-full flex justify-between flex-row mb-1">
