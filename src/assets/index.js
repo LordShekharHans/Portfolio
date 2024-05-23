@@ -22,7 +22,6 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import line from "./hero/line.png"
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
@@ -77,6 +76,8 @@ import Linkedin from "./socials/LinkedIn.svg";
 import Instagram from "./socials/Instagram.svg";
 import Facebook from "./socials/Facebook.svg";
 
+import CV from "./cv.pdf"
+
 export {
   brainwave,
   check,
@@ -101,7 +102,6 @@ export {
   loading,
   background,
   curve,
-  line,
   robot,
   heroBackground,
   curve1,
@@ -146,5 +146,6 @@ export {
   Facebook,
   Instagram,
   WhatsApp,
-  Gmail
+  Gmail,
+  CV
 };

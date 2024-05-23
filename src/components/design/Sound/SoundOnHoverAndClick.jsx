@@ -23,7 +23,7 @@ const SoundOnHoverAndClick = ({ children }) => {
 
     return (
         <div
-            className={`${children.props.className || ""} sound-element`}
+            className={`sound-element`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onClick={handleClick}

@@ -1,5 +1,7 @@
-import React from "react";
-import { companyLogos } from "../constants";
+import React, { Suspense } from "react";
+import { companyLogos, socials } from "../constants";
+import Test from "./canvas/test";
+// import BallCanvas from "./canvas/BallCanvas";
 
 const CompanyLogos = ({ className }) => {
     return (
@@ -17,6 +19,14 @@ const CompanyLogos = ({ className }) => {
                     </li>
                 ))}
             </ul>
+            {/* It works  */}
+            {/* <div className="flex flex-row flex-wrap justify-center gap-10">
+                {socials.map((socials) => (
+                    <div className="w-20 h-20" key={socials.id}>
+                        <BallCanvas icon={socials.iconUrl} />
+                    </div>
+                ))}
+            </div> */}
         </div>
     );
 };

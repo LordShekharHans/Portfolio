@@ -1,13 +1,15 @@
-/** @type {import('tailwindcss').Config} */
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
+import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
 
-export default {
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./public/assets/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -82,9 +84,43 @@ export default {
         "benefit-card-5": "url(assets/benefits/card-5.svg)",
         "benefit-card-6": "url(assets/benefits/card-6.svg)",
       },
+      animation: {
+        "radar-spin": "radar-spin 10s linear infinite",
+        "aurora": "aurora 60s linear infinite",
+        "shimmer": "shimmer 2s linear infinite",
+      },
+      keyframes: {
+        "radar-spin": {
+          from: {
+            transform: "rotate(20deg)",
+          },
+          to: {
+            transform: "rotate(380deg)",
+          },
+        },
+        "aurora": {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+        "keyframes": {
+          shimmer: {
+            from: {
+              "backgroundPosition": "0 0"
+            },
+            to: {
+              "backgroundPosition": "-200% 0"
+            }
+          }
+        },
+      },
     },
   },
   plugins: [
+    addVariablesForColors,
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
       addComponents({
@@ -141,3 +177,20 @@ export default {
     }),
   ],
 };
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
+
+
+
+
+export default config;

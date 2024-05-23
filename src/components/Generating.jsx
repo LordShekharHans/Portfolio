@@ -21,14 +21,14 @@ const Generating = ({ className }) => {
 
     return (
         <div
-            className={`w-6 flex items-center h-[3.5rem] px-6 rounded-3xl bg-n-9/40 backdrop-blur border border-n-1/10 ${
+            className={`w-full flex items-center sm:h-[3.5rem] h-auto px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-3xl bg-n-9/40 backdrop-blur border border-n-1/10 ${
                 className || ""
-            } text-base`}
+            } text-sm md:text-sm lg:text-base`}
         >
             {isOnline ? (
-                <WifiIcon className="w-5 h-5 mr-4 text-green-500" />
+                <WifiIcon className="w-5 h-5 sm:mr-2 mr-3 text-green-500" />
             ) : (
-                <WifiOffIcon className="w-5 h-5 mr-4 text-red-500" />
+                <WifiOffIcon className="w-5 h-5 sm:mr-2 mr-3 text-red-500" />
             )}
 
             {isOnline

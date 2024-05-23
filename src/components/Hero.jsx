@@ -1,16 +1,18 @@
 import React, { useRef } from "react";
 import Section from "./Section";
-import { line } from "../assets";
 import { heroBackground } from "../assets";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { socials } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import Generating from "./Generating";
-import CompanyLogos from "./CompanyLogos";
 import CodeEditor from "./CodeEditor";
 import SoundOnHover from "./design/Sound/SoundOnHover";
+import TextGenerateEffect from "./ui/TextGenerateEffect";
+
 const Hero = () => {
     const parallaxRef = useRef(null);
+
+    const words = `I love exploring new things!`;
     return (
         <Section
             className="pt-[12rem] -mt-[5.25rem]"
@@ -27,19 +29,7 @@ const Hero = () => {
                     <h1 className="h1 mb-1 font-grotesk  font-semibold">
                         Shekhar Hans
                     </h1>
-                    <h1 className="h1 mb-6 text-n-3/100">
-                        I love exploring new{" "}
-                        <span className="inline-block relative">
-                            things!{" "}
-                            <img
-                                src={line}
-                                className="absolute top-full left-0 w-full xl:-mt-2 -z-1"
-                                width={624}
-                                height={28}
-                                alt="Curve"
-                            />
-                        </span>
-                    </h1>
+                    <TextGenerateEffect words={words} className="h1"/>
                     <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
                         "Experienced full-stack developer merging creativity and
                         technical expertise. Eager to innovate, collaborate, and
@@ -100,7 +90,6 @@ const Hero = () => {
                     </div>
                     <BackgroundCircles />
                 </div>
-                <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
             </div>
             <BottomLine />
         </Section>
