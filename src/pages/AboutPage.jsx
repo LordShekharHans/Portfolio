@@ -36,7 +36,7 @@ const AboutPage = () => {
                         duration: 0.5,
                         ease: [0.4, 0.0, 0.2, 1],
                     }}
-                    className="h2 font-bold text-n-2 max-w-8xl leading-relaxed lg:leading-snug"
+                    className="h2 font-bold text-n-2 max-w-8xl leading-relaxed lg:leading-snug text-center"
                 >
                     Passionate Full-Stack Developer blending creativity and
                     technology. Open to opportunities to{" "}

@@ -14,14 +14,17 @@ const Hero = () => {
 
     const words = `I love exploring new things!`;
     return (
-        <Section
-            className="pt-[12rem] -mt-[5.25rem]"
-            crosses
-            crossesOffset="lg:translate-y-[5.25rem]"
-            customPaddings
-            id="hero"
-        >
+        <Section>
             <div className="container relative" ref={parallaxRef}>
+                <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[87%] -z-50">
+                    <img
+                        src={heroBackground}
+                        className="w-full"
+                        width={1440}
+                        height={1800}
+                        alt="hero"
+                    />
+                </div>
                 <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
                     <p className="h6 mb-1 font-roboto font-thin text-color-1">
                         Hello, my name is
@@ -29,7 +32,7 @@ const Hero = () => {
                     <h1 className="h1 mb-1 font-grotesk  font-semibold">
                         Shekhar Hans
                     </h1>
-                    <TextGenerateEffect words={words} className="h1"/>
+                    <TextGenerateEffect words={words} className="h1" />
                     <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
                         "Experienced full-stack developer merging creativity and
                         technical expertise. Eager to innovate, collaborate, and
@@ -79,15 +82,7 @@ const Hero = () => {
                         </div>
                         <Gradient />
                     </div>
-                    <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
-                        <img
-                            src={heroBackground}
-                            className="w-full"
-                            width={1440}
-                            height={1800}
-                            alt="hero"
-                        />
-                    </div>
+
                     <BackgroundCircles />
                 </div>
             </div>

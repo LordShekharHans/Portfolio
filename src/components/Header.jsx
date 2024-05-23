@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import { brainwave, CV } from "../assets";
+import {  CV } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -8,6 +8,7 @@ import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 import SoundOnHoverAndClick from "./design/Sound/SoundOnHoverAndClick";
 import cv from "../assets/cv.pdf";
+import logo from "../assets/logo.png"
 
 const Header = ({ toggleCVModal }) => {
     const pathname = useLocation();
@@ -38,12 +39,12 @@ const Header = ({ toggleCVModal }) => {
         >
             <div className="flex justify-around px-5 lg:px-7.5 xl:px-10 py-4">
                 <SoundOnHoverAndClick>
-                    <Link className="block w-[12rem] xl:mr-8" to="/home">
+                    <Link className="block w-[8rem] xl:mr-8" to="/home">
                         <img
-                            src={brainwave}
+                            src={logo}
                             width={190}
                             height={40}
-                            alt="Brainwave"
+                            alt="LOGO"
                         />
                     </Link>
                 </SoundOnHoverAndClick>
