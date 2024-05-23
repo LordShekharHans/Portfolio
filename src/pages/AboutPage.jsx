@@ -12,8 +12,8 @@ const AboutPage = () => {
     const paragraphs = words.split("\n\n");
 
     return (
-        <div className="py-14 px-10 flex flex-col gap-10">
-            <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%] -z-50">
+        <div className=" px-10 flex flex-col gap-10 overflow-hidden">
+            <div className="absolute -top-[64%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%] -z-50 bg-no-repeat">
                 <img
                     src={heroBackground}
                     className="w-full"
@@ -73,7 +73,6 @@ const AboutPage = () => {
                 </div>
             </div>
             <Preview />
-            
             <EducationEditor/>
         </div>
     );
