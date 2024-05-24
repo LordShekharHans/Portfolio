@@ -1,88 +1,67 @@
-export const cvContent = `<div>
-<header>
-    <h1>Your Name</h1>
-    <p>
-        username | ï username |  mysite.com | # email@mysite.com | H+00.00.000.000
-    </p>
-</header>
+export const cvContent = `
+const cv = {
+    personalInfo: {
+        name: 'Shekhar Hans',
+        address: 'Vip Nagar, Kolkata, West Bengal, 700100',
+        portfolio: 'https://shekharhans-portfolio.netlify.app/',
+        email: 'shekharhans161@gmail.com',
+        mobile: '6296857738'
+    },
+    summary: {
+        title: 'SUMMARY',
+        description: \`I’m Front-End Web Developer building the 
+        Front-end of Websites and Web Applications. I'm a team 
+        player with outstanding communication skills and also 
+        I have knowledge about illustration, and most 
+        importantly, I'm enthusiastic at work.\`
+    },
+    languages: ['English', 'Hindi', 'Bengali'],
+    skills: ['C++', 'C', 'HTML5', 'CSS3', 'JavaScript', 
+            'ReactJs', 'NextJs', 'MySQL', 'MongoDB', 
+            'JQuery', 'SASS', 'TailWind', 'Bootstrap',
+            'Figma', 'Canva', 'Node Js', 'GSAP'],
+    qualifications: {
+        graduation: {
+            college: 'Meghnad Saha Institute Of Technology',
+            university: 'Maulana Abul Kalam Azad University of Technology',
+            duration: '2021 - Present',
+            degree: 'B Tech in Computer Science And Engineering',
+            sgpa: '8.36 (1st Year+2nd Year)'
+        },
+        secondary: {
+            school: 'Bankura Christian Collegiate School',
+            board: 'WBCHSE BOARD',
+            duration: '2018 - 2020',
+            stream: 'Science',
+            marks: '80.2%'
+        },
+        higherSecondary: {
+            school: 'Monglapota High School',
+            board: 'WBBSE BOARD',
+            duration: '2012 - 2018',
+            marks: '82.85%'
+        }
+    },
+    projects: [
+        {
+            name: 'REACT 3D PORTFOLIO',
+            description: 'Built a website with 3D models using React js, Three js, GSAP, CSS'
+        },
+        {
+            name: 'NEXT SPOTIFY CLONE',
+            description: 'Make a spotify clone using Next Js, Spotify API, Tailwind'
+        },
+        {
+            name: 'MUSIC PLAYER',
+            description: 'Make a music player website using Html, CSS and JavaScript'
+        },
+        {
+            name: 'BLOG WEBSITE',
+            description: 'Make a Blog website using Next Js, Css, Json'
+        }
+    ]
+};
 
-<section>
-    <h2>Work Experience</h2>
-    <div>
-        <h3>Designation (Jan 2021 - present)</h3>
-        <p>Long description of work experience...</p>
-    </div>
-    <div>
-        <h3>Designation (Mar 2019 - Jan 2021)</h3>
-        <ul>
-            <li>Long description of work experience...</li>
-            <li>Another point...</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2>Projects</h2>
-    <div>
-        <h3>Some Project</h3>
-        <p>Description of the project...</p>
-    </div>
-</section>
-
-<section>
-    <h2>Education</h2>
-    <div>
-        <h3>PhD (Subject) at University (GPA: 4.0/4.0) - 2030 - present</h3>
-        <p>Description of education...</p>
-    </div>
-    <div>
-        <h3>Bachelor’s Degree at College (GPA: 4.0/4.0) - 2023 - 2027</h3>
-        <p>Description of education...</p>
-    </div>
-    <div>
-        <h3>Class 12th Some Board (Grades) - 2022</h3>
-        <p>Description of education...</p>
-    </div>
-    <div>
-        <h3>Class 10th Some Board (Grades) - 2021</h3>
-        <p>Description of education...</p>
-    </div>
-</section>
-
-<section>
-    <h2>Publications</h2>
-    <ul>
-        <li>
-            <p>
-                Last Name, First Name and First Name Other Last Name (Sept. 2019). "Paper: 
-                This is the name of the paper". In: Some Journal 99.18, pp. 2200–2300. 
-                url: https://some-link.com.
-            </p>
-        </li>
-        <li>
-            <p>
-                Last Name, First Name and First Name Again Last Name (Sept.
-                2022). "Paper II: This is another paper". In: Some Journal
-                99.18, pp. 2200–2300. url: https://some-other-link.com.
-            </p>
-        </li>
-    </ul>
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <div>
-        <h3>Some Skills</h3>
-        <p>This, That, Some of this and that etc.</p>
-    </div>
-    <div>
-        <h3>Some More Skills</h3>
-        <p>
-            Also some more of this, Some more that, And some of this and
-            that etc.
-        </p>
-    </div>
-</section>
-
-<p>Last updated: March 27, 2024</p>
-</div>;`;
+// Example usage:
+console.log(cv);
+`;

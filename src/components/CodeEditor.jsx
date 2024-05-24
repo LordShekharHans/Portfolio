@@ -8,7 +8,7 @@ const CodeEditor = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 767) {
+            if (window.innerWidth <= 992) {
                 setCodeContent(smallScreenCodeContent);
             } else {
                 setCodeContent(largeScreenCodeContent);
@@ -32,7 +32,7 @@ const CodeEditor = () => {
             </div>
             <div className="w-full bg-transparent code-container overflow-hidden -top-[0.5rem] relative">
                 <SyntaxHighlighter
-                    language="html"
+                    language="javascript"
                     style={vscDarkPlus}
                     showLineNumbers
                     customStyle={{

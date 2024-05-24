@@ -56,7 +56,7 @@ const ProjectPage = () => {
                         key={item.id}
                     >
                         <PinContainer
-                            title="/ui.aceternity.com"
+                            title={item.header}
                             href={item.link}
                         >
                             <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
@@ -69,7 +69,7 @@ const ProjectPage = () => {
                                 <img
                                     src={item.img}
                                     alt="cover"
-                                    className="z-10 absolute bottom-0"
+                                    className="z-10 absolute "
                                 />
                             </div>
 
@@ -107,21 +107,21 @@ const ProjectPage = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <SoundOnHoverAndClick>
+                                {/* <SoundOnHoverAndClick>
                                     <div className="flex justify-center items-center">
                                         <a
-                                            href={item.link}
+                                            href={item.githublink}
                                             target={"_blank"}
                                             className="flex lg:text-xl md:text-xs text-sm text-purple"
                                         >
-                                            Check Live Site
+                                            Check GitHub
                                         </a>
                                         <FaLocationArrow
                                             className="ms-3"
                                             color="#CBACF9"
                                         />
                                     </div>
-                                </SoundOnHoverAndClick>
+                                </SoundOnHoverAndClick> */}
                             </div>
                         </PinContainer>
                     </div>

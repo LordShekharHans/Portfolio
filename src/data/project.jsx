@@ -1,70 +1,89 @@
-import p1 from "../assets/project/p1.svg";
-import p2 from "../assets/project/p2.svg";
-import p3 from "../assets/project/p3.svg";
-import p4 from "../assets/project/p4.svg";
+import p1 from "../assets/project/p1.png";
+import p2 from "../assets/project/p2.png";
+import p3 from "../assets/project/p3.png";
+import p4 from "../assets/project/p4.png";
+import p5 from "../assets/project/p5.png";
+import p6 from "../assets/project/p6.png";
 import next from "../assets/project/next.svg";
 import react from "../assets/project/re.svg";
 import famer from "../assets/project/fm.svg";
-import three from "../assets/project/three.svg";
+import scroll from "../assets/project/scroll.svg";
 import ts from "../assets/project/ts.svg";
 import tailwindcss from "../assets/project/tail.svg";
-import stream from "../assets/project/stream.svg";
+import bootstrap from "../assets/project/Bootstrap.svg";
 import c from "../assets/project/c.svg";
-import gsap from "../assets/project/gsap.svg";
-import bg5 from "../assets/project/b5.svg";
+import mui from "../assets/project/mui.png";
+import apex from "../assets/project/apex.png";
+import html from "../assets/project/html.svg";
+import css from "../assets/project/css.svg";
+import js from "../assets/project/js.svg";
 import bg4 from "../assets/project/b4.svg";
 import bg1 from "../assets/project/b1.svg";
 import grid from "../assets/project/grid.svg";
+import sih from "../assets/project/sih.jpg";
 import communication from "../assets/project/communication.jpg";
+import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 
 export const projects = [
     {
         id: 1,
-        title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+        header: "Portfolio",
+        title: "Responsive Portfolio",
+        des: "A personal portfolio website showcasing projects, skills, and experiences.",
         img: p1,
-        iconLists: [react, tailwindcss, ts, three, famer],
-        link: "https://v1.tailwindcss.com/components/buttons",
+        iconLists: [html, css, js, bootstrap, scroll],
+        link: "https://shekharhans-portfolio.netlify.app",
+        githublink: "",
     },
     {
         id: 2,
-        title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+        header: "SM Portfolio",
+        title: "SM Service Consultancy",
+        des: "A professional consultancy service website, simplifying video conferencing and connecting seamlessly.",
         img: p2,
-        iconLists: [next, tailwindcss, ts, stream, c],
-        link: "https://ui.aceternity.com/components/animated-tooltip",
+        iconLists: [react, css, bootstrap, mui],
+        link: "https://sm-consultency.netlify.app/",
+        githublink: "",
     },
     {
         id: 3,
-        title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+        header: "BlogHunt",
+        title: "BlogHunt",
+        des: "A modern blogging platform with a sleek design and user-friendly interface.",
         img: p3,
-        iconLists: [react, tailwindcss, ts, three, c],
-        link: "https://v1.tailwindcss.com/components/buttons",
+        iconLists: [react, css, bootstrap],
+        link: "https://blog-hunt-six.vercel.app/",
+        githublink: "",
     },
     {
         id: 4,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+        header: "Crypto",
+        title: "Crypto Currency Dashboard",
+        des: "A cryptocurrency dashboard application featuring dynamic data visualizations and modern UI components.",
         img: p4,
-        iconLists: [next, tailwindcss, ts, three, gsap],
-        link: "https://chatgpt.com/c/782bec86-cac6-4dff-90bb-2d7001c1ee40",
+        iconLists: [next, tailwindcss, ts, apex, mui],
+        link: "https://currency-dashboard.netlify.app/",
+        githublink: "",
     },
     {
         id: 5,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: p4,
-        iconLists: [next, tailwindcss, ts, three, gsap],
-        link: "https://v1.tailwindcss.com/components/buttons",
+        header: "FOTOGRAPHY",
+        title: "Photographer Portfolio",
+        des: "A portfolio website for photographers, showcasing work and services with an elegant design.",
+        img: p5,
+        iconLists: [html, css, js],
+        link: "https://shekharhans.github.io/FOTOGRAFI/",
+        githublink: "",
     },
     {
         id: 6,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: p4,
-        iconLists: [next, tailwindcss, ts, three, gsap],
-        link: "https://v1.tailwindcss.com/components/buttons",
+        header: "Musicfy",
+        title: "Music Player",
+        des: "A web-based music player application with a clean interface and easy-to-use controls.",
+        img: p6,
+        iconLists: [html, css, js],
+        link: "https://shekharhans.github.io/musicplayer/",
+        githublink: "",
     },
 ];
 
@@ -112,12 +131,12 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
-        description: "The Inside Scoop",
+        title: "SIH'23 Finalist",
+        description: "Team AIDevMind",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
         titleClassName: "justify-center md:justify-start lg:justify-center",
-        img: bg5,
+        img: sih,
         spareImg: grid,
     },
     {
@@ -129,5 +148,23 @@ export const gridItems = [
         titleClassName: "justify-center md:max-w-full max-w-60 text-center",
         img: "",
         spareImg: "",
+    },
+];
+
+export const socialMedia = [
+    {
+        id: 1,
+        img: <IoLogoGithub />,
+        link: "https://github.com/ShekharHans",
+    },
+    {
+        id: 2,
+        img: <IoLogoInstagram />,
+        link: "https://www.instagram.com/crazy_painter__/",
+    },
+    {
+        id: 3,
+        img: <IoLogoLinkedin />,
+        link: "https://www.linkedin.com/in/shekhar-hans-560822246/",
     },
 ];

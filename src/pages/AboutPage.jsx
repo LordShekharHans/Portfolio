@@ -12,7 +12,7 @@ const AboutPage = () => {
     const paragraphs = words.split("\n\n");
 
     return (
-        <div className=" px-10 flex flex-col gap-10 overflow-hidden">
+        <div className=" px-10 flex flex-col gap-10 overflow-hidden pb-5 lg:pb-1 md:pb-1">
             <div className="absolute -top-[64%] left-1/2 w-[100%] -translate-x-1/2 md:-top-[46%] md:w-[100%] lg:-top-[104%] -z-50 bg-no-repeat ">
                 <img
                     src={heroBackground}

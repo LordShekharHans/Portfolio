@@ -21,10 +21,10 @@ const BackgroundCellCore = () => {
         <div
             ref={ref}
             onMouseMove={handleMouseMove}
-            className="h-full absolute inset-0"
+            className="h-full absolute inset-0 "
         >
-            <div className="absolute h-[20rem] inset-y-0 overflow-hidden">
-                <div className="absolute h-full w-full pointer-events-none -bottom-2 z-40 bg-slate-950 [mask-image:linear-gradient(to_bottom,transparent,black)]"></div>
+            <div className="absolute h-[30rem] inset-y-0 overflow-hidden">
+                <div className="absolute h-full w-full pointer-events-none -bottom-2 z-40 bg-n-8 [mask-image:linear-gradient(to_bottom,transparent,black)]"></div>
                 <div
                     className="absolute inset-0 z-20 bg-transparent"
                     style={{
@@ -32,7 +32,7 @@ const BackgroundCellCore = () => {
                             ${size / 4}px circle at center,
                             white, transparent
                             )`,
-                                        WebkitMaskImage: `radial-gradient(
+                        WebkitMaskImage: `radial-gradient(
                             ${size / 4}px circle at center,
                             white, transparent
                             )`,
@@ -107,7 +107,7 @@ const Pattern = ({ className, cellClassName }) => {
                                         ease: "backOut",
                                     }}
                                     animate={controls}
-                                    className="bg-[rgba(14,164,233,0.52)] h-12 w-12"
+                                    className="bg-purple-300/50 h-12 w-12"
                                 ></motion.div>
                             </div>
                         );

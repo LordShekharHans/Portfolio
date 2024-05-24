@@ -7,7 +7,7 @@ const Radar = ({ className }) => {
     return (
         <div
             className={twMerge(
-                "relative flex h-20 w-20 items-center justify-center rounded-full",
+                "relative md:flex lg:flex hidden h-20 w-20 items-center justify-center rounded-full",
                 className
             )}
         >

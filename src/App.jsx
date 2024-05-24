@@ -10,6 +10,7 @@ import SoundOnScroll from "./components/design/Sound/ScrollOnSound";
 import Header from "./components/Header";
 import CVModal from "./components/CVModal";
 import navigateSound from "./assets/sound/8_Zoom_Out_3_latestnews.mp3"; // Import the sound file
+import Footer from "./components/Footer";
 
 const App = () => {
     const location = useLocation();
@@ -59,6 +60,7 @@ const App = () => {
                         />
                     )}
                 </div>
+                <Footer/>
             </SoundOnScroll>
         </>
     );

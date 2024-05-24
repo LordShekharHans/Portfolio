@@ -30,7 +30,7 @@ const BentoGridItem = ({
     spareImg,
 }) => {
     const leftLists = ["ReactJS", "Express", "Typescript"];
-    const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+    const rightLists = ["MongoDB", "NextJs", "Javascript"];
 
     const [copied, setCopied] = useState(false);
     const [isStopped, setIsStopped] = useState(true);
@@ -122,7 +122,7 @@ const BentoGridItem = ({
                         "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
                     )}
                 >
-                    <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+                    <div className=" md:max-w-36 md:text-xs lg:text-base text-sm font-roboto font-thin text-color-1 z-10">
                         {description}
                     </div>
                     <div

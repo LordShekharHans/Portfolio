@@ -24,9 +24,9 @@ const EducationEditor = () => {
     };
 
     return (
-        <div className="flex flex-col gap-10 justify-center items-center overflow-hidden py-14">
+        <div className="lg:flex flex-col md:flex gap-10 justify-center items-center overflow-hidden py-14 hidden">
             <h1 className="h1">Want To Know More?</h1>
-            <div className="flex flex-wrap items-center justify-center gap-10 lg:w-full w-1/2">
+            <div className="flex flex-wrap items-center justify-center gap-10 lg:w-full w-full">
                 <div className="flex flex-row md:flex-row lg:flex-col gap-2  justify-center items-center">
                     {buttons.map(({ label, content }) => (
                         <SoundOnHoverAndClick>
@@ -51,16 +51,16 @@ const EducationEditor = () => {
                         </SoundOnHoverAndClick>
                     ))}
                 </div>
-                <div className="w-[45rem]">
+                <div className="w-[45rem] ">
                     <div className="bg-transparent rounded-lg border border-slate-500/30 flex-grow">
                         <div className="flex gap-2 p-3 border-b border-slate-500/30">
                             <div className="w-2.5 h-2.5 bg-red-600 rounded-full"></div>
                             <div className="w-2.5 h-2.5 bg-yellow-600 rounded-full"></div>
                             <div className="w-2.5 h-2.5 bg-green-600 rounded-full"></div>
                         </div>
-                        <div className="w-full bg-transparent code-container overflow-hidden -top-[0.5rem] relative">
+                        <div className="w-full bg-transparent code-container overflow-hidden -top-[0.5rem] relative ">
                             <SyntaxHighlighter
-                                language="html"
+                                language="javascript"
                                 style={vscDarkPlus}
                                 showLineNumbers
                                 customStyle={{
