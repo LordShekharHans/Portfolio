@@ -10,7 +10,7 @@ import SoundOnHoverAndClick from "../components/design/Sound/SoundOnHoverAndClic
 const ContactPage = () => {
     return (
         <div>
-            <div className="relative h-screen bg-n-8 flex justify-center overflow-hidden">
+            <div className="relative h-full bg-n-8 flex justify-center overflow-hidden">
                 <BackgroundCellCore />
                 <div className="relative z-50 mt-20 p-10">
                     <p className="h6 font-roboto font-thin text-color-1 text-center">
@@ -46,16 +46,16 @@ const ContactPage = () => {
                         want to say hi, I'll do my best to get back to you!
                     </p>
 
-                    <div className="flex flex-col  justify-center items-center h5">
-                        <div className="flex items-start flex-col gap-10 ">
+                    <div className="flex flex-col  justify-center items-center text-base lg:text-lg ">
+                        <div className="flex items-center flex-col gap-10 p-5 justify-center ">
                             <SoundOnHoverAndClick>
                                 <a
                                     href="mailto:shekharhans161@gmail.com"
                                     target={"_blank"}
                                 >
-                                    <button className="flex gap-4 items-center py-3 border-b w-[17rem] hover:w-[20rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
+                                    <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500 ">
                                         <IoMailOutline />
-                                        Write me an email
+                                        Mail Me
                                     </button>
                                 </a>
                             </SoundOnHoverAndClick>
@@ -64,7 +64,7 @@ const ContactPage = () => {
                                     href="https://wa.me/916296857738"
                                     target={"_blank"}
                                 >
-                                    <button className="flex gap-4 items-start py-3 border-b w-[17rem] hover:w-[20rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
+                                    <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
                                         <IoLogoWhatsapp />
                                         WhatsApp me
                                     </button>
@@ -75,7 +75,7 @@ const ContactPage = () => {
                                     href=" http://m.me/shekhar.hans.148"
                                     target={"_blank"}
                                 >
-                                    <button className="flex gap-4 items-center py-3 border-b w-[17rem] hover:w-[20rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
+                                    <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
                                         <FaFacebookMessenger />
                                         Messenger me
                                     </button>

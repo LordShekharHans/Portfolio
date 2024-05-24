@@ -27,9 +27,9 @@ import { DiMysql } from "react-icons/di";
 
 const Preview = () => {
     return (
-        <div className="relative flex h-96 w-full flex-col items-center justify-center space-y-4 overflow-hidden px-4">
-            <div className="mx-auto w-full max-w-3xl">
-                <div className="flex w-full  items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
+        <div className="relative flex h-96 w-full flex-col items-center justify-center space-y-4 lg:overflow-hidden md:overflow-hidden px-0 lg:px-4 scale-75 lg:scale-100">
+            <div className="mx-auto w-full max-w-3xl ">
+                <div className="flex w-full  items-center justify-center space-x-2 lg:space-x-10 md:justify-between md:space-x-0 ">
                     <IconContainer
                         text="Express"
                         delay={0.2}
@@ -59,7 +59,7 @@ const Preview = () => {
                 </div>
             </div>
             <div className="mx-auto w-full max-w-md">
-                <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
+                <div className="flex w-full items-center justify-center space-x-2 lg:space-x-10  md:justify-between md:space-x-0 ">
                     <IconContainer
                         text="Node Js"
                         delay={0.5}
@@ -96,7 +96,7 @@ const Preview = () => {
                 </div>
             </div>
             <div className="mx-auto w-full max-w-3xl">
-                <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
+                <div className="flex w-full items-center justify-center space-x-2 lg:space-x-10  md:justify-between md:space-x-0 ">
                     <IconContainer
                         delay={0.6}
                         text="CSS3"
@@ -110,12 +110,12 @@ const Preview = () => {
                         icon={<FaGithub className=" h-8 w-8 text-[#706FF2]" />}
                     />
                     <IconContainer
-                        delay={0.7}
+                        delay={0.8}
                         text="MySQL"
                         icon={<DiMysql className=" h-8 w-8 text-[#E59208]" />}
                     />
                     <IconContainer
-                        delay={0.7}
+                        delay={0.9}
                         text="MongoDb"
                         icon={<SiMongodb className=" h-8 w-8 text-[#199555]" />}
                     />
