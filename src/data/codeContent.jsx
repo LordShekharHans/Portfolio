@@ -8,10 +8,6 @@ const coder = {
     skills:['React', 'NextJS', 'Redux', 
         'Express', 'NestJS', 'MySql',
         'MongoDB', 'Docker', 'AWS'],
-    about:["SIH'23 Finalist", "Web Designer", 
-        "MERN Developer", "Competitive Coder", 
-        "Coding Enthusiast", "Consistent"]
-    email: 'shekharhans161@gmail.com',
     hardWorker:true,
     quickLearner:true,
     problemSolver:true,

@@ -30,8 +30,10 @@ body::-webkit-scrollbar {
 .pdf-container::-webkit-scrollbar {
   display: none;
 }
+
 .pdf-container {
-  scrollbar-width: none; }
+  scrollbar-width: none;
+}
 
 @layer base {
   body {
@@ -107,6 +109,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 
 .toolbar {
@@ -130,25 +133,27 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 400px) {
-  .code-container {
-    scale: 0.7;
-    bottom: 6rem;
-    position: relative;
-    left: -2rem;
+  .language-javascript {
+    font-size: 7px !important;
+    line-height:0!important;
+    height: 50% !important;
 
   }
 }
+
 .bump-cursor {
   position: fixed;
   width: 20px;
   height: 20px;
-  background-color: #ff0000; /* Change color as per your preference */
+  background-color: #ff0000;
+  /* Change color as per your preference */
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   transition: transform 0.2s ease;
 }
-.shekhar{
+
+.shekhar {
   transform: perspective(1000px) translate3d(-0.182292px, -0.177898px, 0px) rotate3d(1, 0, 0, -0.0889488deg) rotate3d(0, 1, 0, -0.0364583deg);
-  
+
 }
