@@ -5,9 +5,9 @@ export const smallScreenCodeContent = `
 const coder = {
     name:'Shekhar Hans',
     location: 'Kolkata, West Bengal, India',
-    skills:['React', 'NextJS', 'Redux', 
-        'Express', 'NestJS', 'MySql',
-        'MongoDB', 'Docker', 'AWS'],
+    skills:['React', 'NextJS', 'JavaScript', 
+        'Express', 'C++', 'MySql',
+        'MongoDB', 'Node Js', 'Three Js'],
     hardWorker:true,
     quickLearner:true,
     problemSolver:true,
@@ -25,7 +25,7 @@ export const largeScreenCodeContent = `
 const coder = {
     name: 'Shekhar Hans',
     location: 'Kolkata, West Bengal, India',
-    skills: ['React', 'NextJS', 'Redux', 'Express', 'NestJS', 'MySql', 'MongoDB', 'Docker', 'AWS'],
+    skills: ['React', 'NextJS', 'JavaScript','Express', 'C++', 'MySql', 'MongoDB', 'Node Js', 'Three Js'],
     about: \`I'm a passionate front-end web developer with a background
     in computer science. With strong communication skills and
     knowledge of illustration, I am seeking opportunities to
