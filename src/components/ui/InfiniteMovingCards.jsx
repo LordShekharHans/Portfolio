@@ -112,11 +112,9 @@ export const InfiniteMovingCards = ({
                                     <span className="text-sm leading-[1.6] text-gray-400 font-normal">
                                         {item.title}
                                     </span>
+                                    
                                     <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-                                        {item.email}
-                                    </span>
-                                    <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-                                        {item.title}
+                                        {item.rating}
                                     </span>
                                 </span>
                             </div>
