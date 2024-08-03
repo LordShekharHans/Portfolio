@@ -88,7 +88,7 @@ const config = {
         "radar-spin": "radar-spin 10s linear infinite",
         "aurora": "aurora 60s linear infinite",
         "shimmer": "shimmer 2s linear infinite",
-        "scroll":"scroll var(--animation-duration, 20s) var(--animation-direction, forwards) linear infinite",
+        "scroll":"scroll var(--animation-duration, 10s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         "scroll": {
