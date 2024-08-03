@@ -5,6 +5,7 @@ import { cn } from "../utils/cn";
 import { IconStar } from "@tabler/icons-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SoundOnHoverAndClick from "./design/Sound/SoundOnHoverAndClick";
 
 export function Form() {
     const [rating, setRating] = useState(0);
@@ -74,7 +75,7 @@ export function Form() {
     };
 
     return (
-        <div className="max-w-md w-full rounded-none md:rounded-2xl p-5 md:p-8 shadow-input">
+        <div className="max-w-md w-full rounded-none md:rounded-2xl p-0 md:p-8 shadow-input">
             <ToastContainer className="mt-15" />
             <form className="my-8" onSubmit={handleSubmit} ref={formRef}>
                 <LabelInputContainer className="mb-4">
