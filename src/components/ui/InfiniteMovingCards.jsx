@@ -65,7 +65,7 @@ export const InfiniteMovingCards = ({
             } else {
                 containerRef.current.style.setProperty(
                     "--animation-duration",
-                    "10s"
+                    "40s"
                 );
             }
         }
