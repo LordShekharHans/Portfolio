@@ -7,7 +7,6 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 import SoundOnHoverAndClick from "./design/Sound/SoundOnHoverAndClick";
-import cv from "../assets/cv.pdf";
 import logo from "../assets/logo.png"
 
 const Header = ({ toggleCVModal }) => {

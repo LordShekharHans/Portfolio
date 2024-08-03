@@ -24,7 +24,7 @@ import Linkedin from "./socials/LinkedIn.svg";
 import Instagram from "./socials/Instagram.svg";
 import Facebook from "./socials/Facebook.svg";
 
-import CV from "./cv.pdf";
+import CV from "./Shekhar_Resume.pdf";
 
 export {
   play,

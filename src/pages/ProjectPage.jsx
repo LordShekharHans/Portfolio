@@ -8,6 +8,7 @@ import Grid from "../components/Grid";
 import { HeroHighlight, Highlight } from "../components/ui/HeroHighlight";
 import { motion } from "framer-motion";
 import { heroBackground } from "../assets";
+import { Testimonials } from "../components/Testimonials";
 
 const ProjectPage = () => {
     const words = "A small selection of recent projects";
@@ -127,6 +128,7 @@ const ProjectPage = () => {
                     </div>
                 ))}
             </div>
+            <Testimonials/>
         </div>
     );
 };

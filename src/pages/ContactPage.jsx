@@ -6,6 +6,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { IoMailOutline } from "react-icons/io5";
 import { FaFacebookMessenger } from "react-icons/fa";
 import SoundOnHoverAndClick from "../components/design/Sound/SoundOnHoverAndClick";
+import { Form } from "../components/Form";
 
 const ContactPage = () => {
     return (
@@ -45,46 +46,49 @@ const ContactPage = () => {
                         inbox is always open. Whether you have questions or just
                         want to say hi, I'll do my best to get back to you!
                     </p>
-
-                    <div className="flex flex-col  justify-center items-center text-base lg:text-lg ">
-                        <div className="flex items-center flex-col gap-10 p-5 justify-center ">
-                            <SoundOnHoverAndClick>
-                                <a
-                                    href="mailto:shekharhans161@gmail.com"
-                                    target={"_blank"}
-                                >
-                                    <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500 ">
-                                        <IoMailOutline />
-                                        Mail Me
-                                    </button>
-                                </a>
-                            </SoundOnHoverAndClick>
-                            <SoundOnHoverAndClick>
-                                <a
-                                    href="https://wa.me/916296857738"
-                                    target={"_blank"}
-                                >
-                                    <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
-                                        <IoLogoWhatsapp />
-                                        WhatsApp me
-                                    </button>
-                                </a>
-                            </SoundOnHoverAndClick>
-                            <SoundOnHoverAndClick>
-                                <a
-                                    href=" http://m.me/shekhar.hans.148"
-                                    target={"_blank"}
-                                >
-                                    <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
-                                        <FaFacebookMessenger />
-                                        Messenger me
-                                    </button>
-                                </a>
-                            </SoundOnHoverAndClick>
+                    <div className="flex justify-around w-full">
+                        <div className="flex flex-col  justify-center items-center text-base lg:text-lg w-1/2">
+                            <div className="flex items-center flex-col gap-10 p-5 justify-center ">
+                                <SoundOnHoverAndClick>
+                                    <a
+                                        href="mailto:shekharhans161@gmail.com"
+                                        target={"_blank"}
+                                    >
+                                        <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500 ">
+                                            <IoMailOutline />
+                                            Mail Me
+                                        </button>
+                                    </a>
+                                </SoundOnHoverAndClick>
+                                <SoundOnHoverAndClick>
+                                    <a
+                                        href="https://wa.me/916296857738"
+                                        target={"_blank"}
+                                    >
+                                        <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
+                                            <IoLogoWhatsapp />
+                                            WhatsApp me
+                                        </button>
+                                    </a>
+                                </SoundOnHoverAndClick>
+                                <SoundOnHoverAndClick>
+                                    <a
+                                        href=" http://m.me/shekhar.hans.148"
+                                        target={"_blank"}
+                                    >
+                                        <button className="flex gap-4 items-center py-3 border-b md:w-[17rem] w-[13rem] lg:w-[17rem] lg:hover:w-[20rem] md:hover:w-[20rem] hover:w-[15rem] transition-all [mask-image:linear-gradient(to_bottom,transparent,black)] border-purple-500">
+                                            <FaFacebookMessenger />
+                                            Messenger me
+                                        </button>
+                                    </a>
+                                </SoundOnHoverAndClick>
+                            </div>
                         </div>
+                        <Form />
                     </div>
                 </div>
             </div>
+                <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
         </div>
     );
 };

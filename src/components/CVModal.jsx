@@ -4,7 +4,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import { cvContent } from "../data/cvContent";
-import cv from "../assets/cv.pdf";
+import cv from "../assets/Shekhar_Resume.pdf";
 import SoundOnHoverAndClick from "./design/Sound/SoundOnHoverAndClick";
 
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
