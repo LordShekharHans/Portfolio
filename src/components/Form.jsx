@@ -3,8 +3,8 @@ import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "../utils/cn";
 import { IconStar } from "@tabler/icons-react";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export function Form() {
     const [rating, setRating] = useState(0);
@@ -36,18 +36,22 @@ export function Form() {
         const formData = {
             name: e.target.name.value,
             email: e.target.email.value,
+            title: e.target.title.value,
             message,
             rating,
         };
 
         try {
-            const response = await fetch(`${import.meta.env.VITE_API}/feedback`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
+            const response = await fetch(
+                `${import.meta.env.VITE_API}/feedback`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                }
+            );
 
             if (response.ok) {
                 const result = await response.json();
@@ -75,11 +79,33 @@ export function Form() {
             <form className="my-8" onSubmit={handleSubmit} ref={formRef}>
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="name">Name</Label>
-                    <Input id="name" name="name" placeholder="John Doe" type="text" required />
+                    <Input
+                        id="name"
+                        name="name"
+                        placeholder="John Doe"
+                        type="text"
+                        required
+                    />
+                </LabelInputContainer>
+                <LabelInputContainer className="mb-4">
+                    <Label htmlFor="title">Title</Label>
+                    <Input
+                        id="title"
+                        name="title"
+                        placeholder="CEO of XYZ Company"
+                        type="text"
+                        required
+                    />
                 </LabelInputContainer>
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" name="email" placeholder="john.doe@example.com" type="email" required />
+                    <Input
+                        id="email"
+                        name="email"
+                        placeholder="john.doe@example.com"
+                        type="email"
+                        required
+                    />
                 </LabelInputContainer>
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="message">Message</Label>
@@ -140,7 +166,9 @@ const LabelInputContainer = ({ children, className }) => {
 
 const Star = ({ filled, onClick }) => (
     <IconStar
-        className={`h-6 w-6 cursor-pointer ${filled ? 'text-color-6' : 'text-n-5'}`}
+        className={`h-6 w-6 cursor-pointer ${
+            filled ? "text-color-6" : "text-n-5"
+        }`}
         onClick={onClick}
     />
 );

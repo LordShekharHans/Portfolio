@@ -17,8 +17,9 @@ export function Testimonials() {
         const transformedTestimonials = feedbacks.map(feedback => ({
           quote: feedback.message,
           name: feedback.name,
+          title: feedback.title,
           email: feedback.email,
-          title: renderStars(feedback.rating) // Generate stars based on rating
+          rating: renderStars(feedback.rating) // Generate stars based on rating
         }));
 
         setTestimonials(transformedTestimonials);
