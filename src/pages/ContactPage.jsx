@@ -46,8 +46,8 @@ const ContactPage = () => {
                         inbox is always open. Whether you have questions or just
                         want to say hi, I'll do my best to get back to you!
                     </p>
-                    <div className="flex justify-around w-full">
-                        <div className="flex flex-col  justify-center items-center text-base lg:text-lg w-1/2">
+                    <div className="flex flex-col justify-around w-full md:flex-col lg:flex-row">
+                        <div className="flex flex-col  justify-center items-center text-base lg:text-lg  lg:w-full md:w-1/2">
                             <div className="flex items-center flex-col gap-10 p-5 justify-center ">
                                 <SoundOnHoverAndClick>
                                     <a
