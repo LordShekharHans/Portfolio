@@ -75,7 +75,8 @@ export function Form() {
     };
 
     return (
-        <div className="max-w-md w-full rounded-none md:rounded-2xl p-0 md:p-8 shadow-input">
+        <div className="max-w-lg w-full rounded-none md:rounded-2xl  shadow-input">
+            <p className="h2 font-bold text-n-2 max-w-8xl leading-relaxed lg:leading-snug text-center">Feedback Me</p>
             <ToastContainer className="mt-15" />
             <form className="my-8" onSubmit={handleSubmit} ref={formRef}>
                 <LabelInputContainer className="mb-4">

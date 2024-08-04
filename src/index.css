@@ -158,3 +158,24 @@ body::-webkit-scrollbar {
 
 }
 
+/* Add this to your global styles or in a CSS module file */
+
+/* Default styling for PDF container */
+.pdf-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Default styling for PDF object */
+.pdf-object {
+  width: 100%;
+  height: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .pdf-object {
+      width: 50%; /* Scale to 50% of the width on smaller screens */
+      height: auto; /* Maintain the aspect ratio */
+  }
+}

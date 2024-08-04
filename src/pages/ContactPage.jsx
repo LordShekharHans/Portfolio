@@ -47,9 +47,12 @@ const ContactPage = () => {
                         want to say hi, I'll do my best to get back to you!
                     </p>
                     <SoundOnHoverAndClick>
-                        <div className="flex flex-col justify-around w-full md:flex-col lg:flex-row">
-                            <div className="flex flex-col  justify-center items-center text-base lg:text-lg  lg:w-1/3 md:w-1/3">
-                                <div className="flex items-center flex-col gap-10 p-5 justify-center ">
+                        <div className="flex flex-col justify-between w-full md:flex-col lg:flex-row items-center lg:items-start md:items-start mt-36 gap-5">
+                            <div className="flex flex-col  justify-center items-center text-base lg:text-lg  lg:w-1/3 md:w-1/3 ">
+                                <p className="h2 font-bold text-n-2 max-w-7xl leading-relaxed lg:leading-snug text-center">
+                                    Contact Here
+                                </p>
+                                <div className="flex items-start flex-col gap-10 p-5 justify-center ">
                                     <SoundOnHoverAndClick>
                                         <a
                                             href="mailto:shekharhans161@gmail.com"
