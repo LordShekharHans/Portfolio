@@ -24,7 +24,7 @@ export default function Enter() {
                     className="mt-8 bg-gradient-to-br from-neutral-200 to-neutral-600 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
                 >
                     Welcome to My Portfolio, <FlipWords words={words} />
-                    <span className="text-purple-300">!</span> <br />
+                    <span className="text-teal-300">!</span> <br />
                     <SoundOnHoverAndClick>
                         <Link to="/home">
                             <Button>Enter</Button>

@@ -13,7 +13,7 @@ const AboutPage = () => {
 
     return (
         <div className=" flex flex-col gap-10 overflow-hidden pb-5 lg:pb-1 md:pb-1">
-            <div className="absolute -top-[64%] left-1/2 w-[100%] -translate-x-1/2 md:-top-[46%] md:w-[100%] lg:-top-[104%] -z-50 bg-no-repeat ">
+            <div className="absolute -top-[64%] left-1/2 w-[100%] -translate-x-1/2 md:-top-[46%] md:w-[100%] lg:-top-[85%] -z-50 bg-no-repeat opacity-45 ">
                 <img
                     src={heroBackground}
                     className="w-full"
@@ -56,7 +56,7 @@ const AboutPage = () => {
                 <div className="flex  items-center justify-self-center row-start-1 md:visible lg:col-start-2 lg:col-end-3 ">
                     <span className="relative flex shrink-0 overflow-hidden rounded-full size-[17rem] md:size-[22rem] lg:size-[30rem] z-20">
                         <img
-                            className="aspect-square h-full w-full object-cover bg-opacity-20 bg-purple-300 dark:bg-opacity-20 shadow-2xl backdrop-filter backdrop-blur-[3px] shekhar"
+                            className="aspect-square h-full w-full object-cover bg-opacity-20 bg-[#37B3BF] dark:bg-opacity-20 shadow-2xl backdrop-filter backdrop-blur-[3px] shekhar"
                             alt="Shekhar Hans"
                             src={Image}
                         />
@@ -64,10 +64,10 @@ const AboutPage = () => {
                 </div>
 
                 <div className="absolute top-56 right-0 w-[100%] h-[100%] overflow-hidden  invisible lg:visible -z-10">
-                    <span className="rotate-[90deg] text-purple-300/45 font-poppins font-bold text-[15rem] absolute top-[27rem] right-[-13rem]  ">
+                    <span className="rotate-[90deg] text-[#37B3BF]/45 font-poppins font-bold text-[15rem] absolute top-[27rem] right-[-13rem]  ">
                         About
                     </span>
-                    <span className="rotate-[90deg] text-purple-300/45 font-poppins font-bold text-[12rem] absolute top-[18rem] lg:right-[20rem]">
+                    <span className="rotate-[90deg] text-[#37B3BF]/45 font-poppins font-bold text-[12rem] absolute top-[18rem] lg:right-[20rem]">
                         Me
                     </span>
                 </div>
