@@ -11,7 +11,7 @@ export default function Enter() {
     const words = ["creative", "innovative", "unique", "dynamic"];
 
     return (
-        <Section>
+        <Section className="overflow-hidden w-screen h-screen">
             <LampContainer>
                 <motion.h1
                     initial={{ opacity: 0.5, y: 100 }}

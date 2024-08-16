@@ -18,7 +18,7 @@ import html from "../assets/project/html.svg";
 import css from "../assets/project/css.svg";
 import js from "../assets/project/js.svg";
 import bg4 from "../assets/project/b4.svg";
-import bg1 from "../assets/project/b1.svg";
+import bg1 from "../assets/project/b1.png";
 import grid from "../assets/project/grid.svg";
 import sih from "../assets/project/sih.jpg";
 import communication from "../assets/project/communication.jpg";

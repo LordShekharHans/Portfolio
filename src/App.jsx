@@ -44,7 +44,11 @@ const App = () => {
         <>
             {!isEnterPage && <Header toggleCVModal={toggleCVModal} />}
             <SoundOnScroll>
-                <div className={`${!isEnterPage ? "pt-[4.75rem] lg:pt-[4.25rem]" : ""} overflow-hidden`}>
+                <div
+                    className={`${
+                        !isEnterPage ? "pt-[4.75rem] lg:pt-[4.25rem]" : ""
+                    } overflow-hidden`}
+                >
                     <Routes>
                         <Route path="/" element={<Enter />} />
                         <Route path="/home" element={<HomePage />} />
@@ -53,14 +57,14 @@ const App = () => {
                         <Route path="/contact" element={<ContactPage />} />
                     </Routes>
                     <ButtonGradient />
-                    {isCVModalOpen && (
+                    {isCVModalOpen && !isEnterPage && (
                         <CVModal
                             toggleCVModal={toggleCVModal}
                             enablePageScroll={enablePageScroll}
                         />
                     )}
                 </div>
-                <Footer/>
+                {!isEnterPage && <Footer />}
             </SoundOnScroll>
         </>
     );

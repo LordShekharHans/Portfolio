@@ -9,7 +9,7 @@ const HomePage = () => {
                 <Hero />
             </div>
             <ButtonGradient />
-            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mb-8 h-[1px] w-full" />
         </>
     );
 };

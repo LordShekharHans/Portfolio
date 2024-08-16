@@ -130,7 +130,7 @@ const ProjectPage = () => {
             </div>
             <p className=" mt-5 h2 font-bold text-n-2 max-w-8xl leading-relaxed lg:leading-snug text-center">What My Clients and Friends Think ?</p>
             <Testimonials/>
-            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full" />
         </div>
     );
 };
