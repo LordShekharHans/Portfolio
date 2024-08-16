@@ -5,7 +5,7 @@ import { cn } from "../utils/cn";
 import { IconStar } from "@tabler/icons-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import SoundOnHoverAndClick from "./design/Sound/SoundOnHoverAndClick";
+import emailjs from '@emailjs/browser';
 
 export function Form() {
     const [rating, setRating] = useState(0);
@@ -26,14 +26,63 @@ export function Form() {
         }
     };
 
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+
+    //     if (message.length > 300) {
+    //         toast.error("Message cannot exceed 80 characters");
+    //         return;
+    //     }
+
+    //     const formData = {
+    //         name: e.target.name.value,
+    //         email: e.target.email.value,
+    //         title: e.target.title.value,
+    //         message,
+    //         rating,
+    //     };
+
+    //     try {
+    //         const response = await fetch(
+    //             `${import.meta.env.VITE_API}/feedback`,
+    //             {
+    //                 method: "POST",
+    //                 headers: {
+    //                     "Content-Type": "application/json",
+    //                 },
+    //                 body: JSON.stringify(formData),
+    //             }
+    //         );
+
+    //         if (response.ok) {
+    //             const result = await response.json();
+    //             toast.success("Form submitted successfully");
+    //             console.log("Form submitted successfully", result);
+    //             if (formRef.current) {
+    //                 formRef.current.reset();
+    //             }
+    //             setRating(0);
+    //             setMessage("");
+    //             setRemainingChars(300);
+    //         } else {
+    //             toast.error("Form submission failed");
+    //             console.error("Form submission failed", response.statusText);
+    //         }
+    //     } catch (error) {
+    //         toast.error("Error submitting form");
+    //         console.error("Error submitting form", error);
+    //     }
+    // };
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         if (message.length > 300) {
-            toast.error("Message cannot exceed 80 characters");
+            toast.error("Message cannot exceed 300 characters");
             return;
         }
-
+    
         const formData = {
             name: e.target.name.value,
             email: e.target.email.value,
@@ -41,9 +90,10 @@ export function Form() {
             message,
             rating,
         };
-
+    
         try {
-            const response = await fetch(
+            // First, send data to your backend API
+            const apiResponse = await fetch(
                 `${import.meta.env.VITE_API}/feedback`,
                 {
                     method: "POST",
@@ -53,26 +103,74 @@ export function Form() {
                     body: JSON.stringify(formData),
                 }
             );
-
-            if (response.ok) {
-                const result = await response.json();
-                toast.success("Form submitted successfully");
-                console.log("Form submitted successfully", result);
-                if (formRef.current) {
-                    formRef.current.reset();
-                }
-                setRating(0);
-                setMessage("");
-                setRemainingChars(300);
-            } else {
-                toast.error("Form submission failed");
-                console.error("Form submission failed", response.statusText);
+    
+            if (!apiResponse.ok) {
+                throw new Error("API submission failed");
             }
+    
+            // Next, send an email via EmailJS
+            const emailResponse = await emailjs.send(
+                'service_sbb5af9',
+                'template_sop711f',
+                formData,
+                'ctOclVVF3MvMin3fL'
+            );
+    
+            toast.success("Form submitted successfully");
+            console.log("Form submitted successfully", emailResponse);
+    
+            if (formRef.current) {
+                formRef.current.reset();
+            }
+            setRating(0);
+            setMessage("");
+            setRemainingChars(300);
         } catch (error) {
             toast.error("Error submitting form");
             console.error("Error submitting form", error);
         }
     };
+    
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    
+    //     if (message.length > 300) {
+    //         toast.error("Message cannot exceed 300 characters");
+    //         return;
+    //     }
+    
+    //     const formData = {
+    //         name: e.target.name.value,
+    //         email: e.target.email.value,
+    //         title: e.target.title.value,
+    //         message,
+    //         rating,
+    //     };
+    
+    //     try {
+    //         // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_PUBLIC_KEY' with your actual EmailJS details
+    //         const result = await emailjs.send(
+    //             'service_sbb5af9',
+    //             'template_sop711f',
+    //             formData,
+    //             'ctOclVVF3MvMin3fL'
+    //         );
+    
+    //         toast.success("Form submitted successfully");
+    //         console.log("Form submitted successfully", result);
+    
+    //         if (formRef.current) {
+    //             formRef.current.reset();
+    //         }
+    //         setRating(0);
+    //         setMessage("");
+    //         setRemainingChars(300);
+    //     } catch (error) {
+    //         toast.error("Error submitting form");
+    //         console.error("Error submitting form", error);
+    //     }
+    // };
 
     return (
         <div className="max-w-lg w-full rounded-none md:rounded-2xl  shadow-input">
