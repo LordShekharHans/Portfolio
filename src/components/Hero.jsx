@@ -8,6 +8,7 @@ import Generating from "./Generating";
 import CodeEditor from "./CodeEditor";
 import SoundOnHover from "./design/Sound/SoundOnHover";
 import TextGenerateEffect from "./ui/TextGenerateEffect";
+import BackgroundCellCore from "./ui/BackgroundCellCore";
 
 const Hero = () => {
     const parallaxRef = useRef(null);
@@ -16,14 +17,8 @@ const Hero = () => {
     return (
         <Section>
             <div className="container relative" ref={parallaxRef}>
-                <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[87%] -z-50">
-                    <img
-                        src={heroBackground}
-                        className="w-full"
-                        width={1440}
-                        height={1800}
-                        alt="hero"
-                    />
+                <div className="absolute -top-20 -left-[5.1rem] -z-50 opacity-50">
+                <BackgroundCellCore />
                 </div>
                 <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
                     <p className="h6 mb-1 font-roboto font-thin text-color-1">
